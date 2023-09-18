@@ -58,6 +58,7 @@ function App() {
     const box = {
         display: 'flex',
     };
+
     return (
         <>
             <h3>실습1</h3>
