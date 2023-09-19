@@ -1,0 +1,141 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.caterpillar {
+    position: relative;
+}
+
+.circle1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    margin: 100px;
+}
+.eyes {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    margin: 105px;
+}
+.hitomi {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: absolute;
+    margin: 110px;
+}
+.circle2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #060669;
+    position: absolute;
+    margin: 120px;
+}
+.circle3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightblue;
+    position: absolute;
+    margin: 150px;
+}
+.circle4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2f2f63;
+    position: absolute;
+    margin: 170px;
+    margin-top: 160px;
+}
+.circle5 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #84849a;
+    position: absolute;
+    margin: 200px;
+    margin-top: 170px;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.myStyle {
+    background-color: blue;
+    color: orange;
+    font-size: 40px;
+    padding: 12px;
+}
+
+.style {
+    color: orange;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.red {
+    color: red;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    width: 317px;
+    background-color: blanchedalmond;
+    padding: 50px;
+}
+
+.book {
+    width: 100px;
+}
+
+.title {
+    color: orange;
+}
+
+.specific {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+}
