@@ -1,15 +1,18 @@
-import PropsPrac1 from "./04Props/PropsPrac1";
-import PropsPrac2 from "./04Props/PropsPrac2";
-import Message from "./05Event/Message";
-import StatePrac1 from "./06State/StatePrac1";
-import StatePrac2 from "./06State/StatePrac2";
-import StatePrac3 from "./06State/StatePrac3";
-import StatePrac4 from "./06State/StatePrac4";
-import UseStatePrac1 from "./07UseState/UseStatePrac1";
-import UseStatePrac2 from "./07UseState/UseStatePrac2";
-import UseStatePrac3 from "./07UseState/UseStatePrac3";
-import UseStatePrac4 from "./07UseState/UseStatePrac4";
-import UseStatePrac5 from "./07UseState/UseStatePrac5";
+import PropsPrac1 from './04Props/PropsPrac1';
+import PropsPrac2 from './04Props/PropsPrac2';
+import Message from './05Event/Message';
+import StatePrac1 from './06State/StatePrac1';
+import StatePrac2 from './06State/StatePrac2';
+import StatePrac3 from './06State/StatePrac3';
+import StatePrac4 from './06State/StatePrac4';
+import UseStatePrac1 from './07UseState/UseStatePrac1';
+import UseStatePrac2 from './07UseState/UseStatePrac2';
+import UseStatePrac3 from './07UseState/UseStatePrac3';
+import UseStatePrac4 from './07UseState/UseStatePrac4';
+import UseStatePrac5 from './07UseState/UseStatePrac5';
+import LifeCycleFunc from './08LifeCycle/LifeCycleFunc';
+import LifeCycleActivity1 from './08LifeCycle/LifeCycleActivity1';
+import LifeCycleActivity2 from './08LifeCycle/LifeCycleActivity2';
 
 function App() {
     return (
@@ -31,11 +34,14 @@ function App() {
             <StatePrac3 />
             <StatePrac4 /> */}
             {/* useState 실습 */}
-            <UseStatePrac1 />
+            {/* <UseStatePrac1 />
             <UseStatePrac2 />
             <UseStatePrac3 />
             <UseStatePrac4 />
-            <UseStatePrac5 />
+            <UseStatePrac5 /> */}
+            {/* <LifeCycleFunc /> */}
+            {/* <LifeCycleActivity1 /> */}
+            <LifeCycleActivity2 />
         </>
     );
 }
