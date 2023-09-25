@@ -1,4 +1,5 @@
-import { Component } from "react";
+import { Component } from 'react';
+import React from 'react';
 
 class StatePrac4 extends Component {
     constructor(props) {
@@ -6,13 +7,14 @@ class StatePrac4 extends Component {
 
         //state 초기화
         this.state = {
-            inputWriter: "", //작성자
-            inputTitle: "", //제목
+            inputWriter: '', //작성자
+            inputTitle: '', //제목
             comments: [], //입력한 내용
-            inputSearch: "", //검색내용
-            searchType: "title", //검색타입
+            inputSearch: '', //검색내용
+            searchType: 'title', //검색타입
             results: [], //검색결과
         };
+        this.inputRef = React.createRef(); // Create a ref
         //바인딩
         this.onChange = this.onChange.bind(this);
         this.addComment = this.addComment.bind(this);
@@ -29,7 +31,14 @@ class StatePrac4 extends Component {
             writer: this.state.inputWriter,
             title: this.state.inputTitle,
         };
-        this.setState({ comments: [...this.state.comments, newComment], inputTitle: "", inputWriter: "" });
+
+        if (this.state.inputWriter === '' || this.state.inputTitle === '') {
+            this.inputRef.current.focus();
+            this.inputRef.current.style.border = '4px solid red';
+            return;
+        }
+
+        this.setState({ comments: [...this.state.comments, newComment], inputTitle: '', inputWriter: '' });
     }
 
     searchComment() {
@@ -65,6 +74,7 @@ class StatePrac4 extends Component {
                         id="title"
                         value={inputTitle}
                         onChange={(e) => this.setState({ inputTitle: e.target.value })}
+                        ref={this.inputRef} // Assign the ref to the input element
                     />
                     <button type="button" onClick={this.addComment}>
                         작성
@@ -75,12 +85,7 @@ class StatePrac4 extends Component {
                         <option value="writer">작성자</option>
                         <option value="title">제목</option>
                     </select>
-                    <input
-                        type="text"
-                        placeholder="검색어"
-                        value={inputSearch}
-                        onChange={(e) => this.setState({ inputSearch: e.target.value })}
-                    />
+                    <input type="text" placeholder="검색어" value={inputSearch} onChange={(e) => this.setState({ inputSearch: e.target.value })} />
                     <button type="button" onClick={this.searchComment}>
                         검색
                     </button>

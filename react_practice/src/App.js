@@ -13,6 +13,10 @@ import UseStatePrac5 from './07UseState/UseStatePrac5';
 import LifeCycleFunc from './08LifeCycle/LifeCycleFunc';
 import LifeCycleActivity1 from './08LifeCycle/LifeCycleActivity1';
 import LifeCycleActivity2 from './08LifeCycle/LifeCycleActivity2';
+import RefSampleClass1 from './09Ref/RefSampleClass1';
+import RefSampleClass2 from './09Ref/RefSampleClass2';
+import RefSampleFuntion1 from './09Ref/RefSampleFunc';
+import RefActivity1 from './09Ref/RefActivity1';
 
 function App() {
     return (
@@ -30,9 +34,9 @@ function App() {
             {/* <Message message={"Hello React"} /> */}
             {/* state 실습 */}
             {/* <StatePrac1 />
-            <StatePrac2 />
-            <StatePrac3 />
-            <StatePrac4 /> */}
+            <StatePrac2 /> */}
+            {/* <StatePrac3 /> */}
+            {/* <StatePrac4 /> */}
             {/* useState 실습 */}
             {/* <UseStatePrac1 />
             <UseStatePrac2 />
@@ -41,7 +45,11 @@ function App() {
             <UseStatePrac5 /> */}
             {/* <LifeCycleFunc /> */}
             {/* <LifeCycleActivity1 /> */}
-            <LifeCycleActivity2 />
+            {/* <LifeCycleActivity2 /> */}
+            {/* <RefSampleClass1 />
+            <RefSampleClass2 /> */}
+            {/* <RefSampleFuntion1 /> */}
+            <RefActivity1 />
         </>
     );
 }
