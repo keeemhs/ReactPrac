@@ -17,6 +17,8 @@ import RefSampleClass1 from './09Ref/RefSampleClass1';
 import RefSampleClass2 from './09Ref/RefSampleClass2';
 import RefSampleFuntion1 from './09Ref/RefSampleFunc';
 import RefActivity1 from './09Ref/RefActivity1';
+import UseMemo from './10Hook/useMemo';
+import Counter from './10Hook/useReducer';
 
 function App() {
     return (
@@ -49,7 +51,9 @@ function App() {
             {/* <RefSampleClass1 />
             <RefSampleClass2 /> */}
             {/* <RefSampleFuntion1 /> */}
-            <RefActivity1 />
+            {/* <RefActivity1 /> */}
+            {/* <UseMemo /> */}
+            <Counter />
         </>
     );
 }
