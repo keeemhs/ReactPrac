@@ -19,6 +19,7 @@ import RefSampleFuntion1 from './09Ref/RefSampleFunc';
 import RefActivity1 from './09Ref/RefActivity1';
 import UseMemo from './10Hook/useMemo';
 import Counter from './10Hook/useReducer';
+import SignupForm from './10Hook/signUp';
 
 function App() {
     return (
@@ -53,7 +54,8 @@ function App() {
             {/* <RefSampleFuntion1 /> */}
             {/* <RefActivity1 /> */}
             {/* <UseMemo /> */}
-            <Counter />
+            {/* <Counter /> */}
+            <SignupForm />
         </>
     );
 }
