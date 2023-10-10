@@ -1,7 +1,12 @@
-import Book from "./Book";
+import RouterPrac1 from './12Router/RouterPrac1';
+import Book from './Book';
 
 function App() {
-    return <></>;
+    return (
+        <>
+            <RouterPrac1 />
+        </>
+    );
 }
 
 export default App;
