@@ -8,6 +8,14 @@ function getValue(val: string | number | object) {
 getValue('hi');
 
 // 제네릭 타입으로 변경
-function getValue2<T>(value: T) {
+function getValue2<T>(value: T): T {
     return value;
 }
+console.log(getValue2<string>('안녕'));
+console.log(getValue2<number>(100));
+
+function arrLength<T>(arr: T[]) {
+    return arr.length;
+}
+console.log(arrLength<string>(['a', 'b', 'c']));
+console.log(arrLength<number>([1, 2, 3, 4, 5]));
