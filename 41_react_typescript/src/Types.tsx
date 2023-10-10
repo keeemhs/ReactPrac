@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 interface Props {
     name?: string;
@@ -9,10 +9,14 @@ interface Data {
 }
 // 컴포넌트 제작 방법 2
 const Types: React.FC<Props> = (props) => {
-    const [count, setCount] = useState<Data>();
+    const [count, setCount] = useState<Data | null>();
+
+    const myInput = useRef<HTMLInputElement>(null);
+
     return (
         <>
             <h2>Hello {props.name}</h2>
+            <input ref={myInput} />
         </>
     );
 };
