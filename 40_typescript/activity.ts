@@ -34,12 +34,23 @@
 // };
 
 /* ----------------------- activity3 ------------------------- */
-function sum1(a: number, b: number) {
-    console.log(a + b);
-}
-sum1(5, 11);
+// function sum1(a: number, b: number) {
+//     console.log(a + b);
+// }
+// sum1(5, 11);
 
-const sum2 = (...number: number[]) => {
-    return number.reduce((acc, cur) => acc + cur, 0);
-};
-console.log(sum2(1, 2, 3, 4, 10));
+/* ----------------------- activity4 ------------------------- */
+// const sum2 = (...number: number[]) => {
+//     return number.reduce((acc, cur) => acc + cur, 0);
+// };
+// console.log(sum2(1, 2, 3, 4, 10));
+
+/* ----------------------- activity5 ------------------------- */
+function arrElement<T>(arr: T[], index: number): T | boolean {
+    if (arr.length - 1 < index) {
+        return false;
+    } else {
+        return arr[index];
+    }
+}
+console.log(arrElement<string>(['a'], 1));
